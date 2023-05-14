@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="login.php">go to login</a>
+    <a href="login.php">go to login page</a>
   
    
 </body>
