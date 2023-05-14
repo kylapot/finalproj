@@ -28,8 +28,8 @@ CREATE TABLE `conversation` (
   `message` varchar(220) DEFAULT NULL,
   `timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
+) 
+/*!40101 SET character_set_client = @saved_cs_client */
 
 --
 -- Dumping data for table `conversation`

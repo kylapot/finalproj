@@ -1,11 +1,6 @@
 <?php
     require("connection.php");
-    if(isset($_POST['submit'])){
-        if(isset($_POST['message'])){
-            $message = $_POST['message'];
-            
-        }
-    }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +20,7 @@
     <div class="inputs">
         <form action="<?php $_SERVER['PHP_SELF']  ?>" method="POST">
             <input type="text" name="message">
-            <button name="submit" type="submit"></button>
+            <button name="submit" type="submit">Message</button>
         </form>
     </div>
   
