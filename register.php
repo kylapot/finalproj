@@ -9,6 +9,8 @@ if (isset($_POST['submit'])) {
         $result = mysqli_query($conn, $query);
         if($result){
             echo "okay na po";
+            // session_start();
+            // $_SESSION['name'] = $name; 
             header("Location: login.php");
             exit();
         }else{
@@ -34,5 +36,6 @@ if (isset($_POST['submit'])) {
   <input type="text" name="name" placeholder="Input username">
    <button name="submit" type="submit">Submit</button>
   </form>
+  <a href="login.php">login</a>
 </body>
 </html>

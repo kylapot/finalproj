@@ -8,6 +8,8 @@ if (isset($_POST['submit'])) {
         $query = "SELECT * FROM users WHERE name = '$name'";
         $result = mysqli_fetch_array(mysqli_query($conn, $query));
         if($name == $result['name']) {
+            session_start();
+            $_SESSION['id'] = $result['id'];
             header("Location: user.php");
             exit();
         }else{
@@ -33,5 +35,6 @@ if (isset($_POST['submit'])) {
   <input type="text" name="name" placeholder="Input username">
    <button name="submit" type="submit">Submit</button>
   </form>
+  <a href="register.php">register</a>
 </body>
 </html>
